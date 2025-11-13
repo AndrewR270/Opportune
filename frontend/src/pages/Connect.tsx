@@ -66,6 +66,17 @@ const Connect = () => {
             onSubmitForm={setSearch}
           />
         </div>
+        <body>
+          { getAlumni.length === 0 ? (
+            <div className="text-center">
+              <p>No alumni found. [Placeholder]</p>
+            </div>
+          ) : ( 
+            <div className="text-center">
+              <p>PLACEHOLDER [Only should be triggered when listings are available.] </p>
+            </div>
+          )}
+        </body>
         {/* Alumni List */}
         <div className="overflow-visible">
           <div className="flex flex-col h-[75vh]">
